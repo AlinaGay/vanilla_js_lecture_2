@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //1
+    function showMessage() {
+
+        alert(`Hellow WORLD!` );
+    }
+
+    showMessage(); // или window.showMessage()
+
+    //2
+    function user() {
+
+        function sayHellow() {
+
+            alert( `User says: Hellow WORLD!` );
+
+        }
+
+    }
+
+    var someUser = new user();
+    someUser.sayHellow();
+</script>
+</body>
+</html>

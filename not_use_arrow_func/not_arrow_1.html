@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var calculate = {
+        array: [1, 2, 3],
+        sum: () => {
+            console.log(this === window); // => true
+            return this.array.reduce((result, item) => result + item);
+        }
+    };
+    console.log(this === window); // => true
+    alert(calculate.sum()); //=> "TypeError: Cannot read property 'reduce' of undefined” this – это window, а там нет переменной array.
+
+    //decision: use short construction of declaration
+
+    var calculate = {
+        array: [1, 2, 3],
+        sum() { <!--…--> }
+    }
+</script>
+</body>
+</html>

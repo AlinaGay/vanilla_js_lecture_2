@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //1
+    function showMessage( userName ) {
+
+        var message = userName + ` говорит: Hellow WORLD!`;
+
+        return message;
+    }
+
+    alert(showMessage( `Иван Петрович` ));
+    //2
+    function showMessage( userNameOne, userNameTwo ) {
+
+        var message = `Got users: ` + userNameOne + ` и `+ userNameTwo;
+
+        alert(message);
+    }
+
+    showMessage(`Вася`, `Петя`);
+</script>
+
+</body>
+</html>

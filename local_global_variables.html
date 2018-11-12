@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+//local variable
+    function showMessage() {
+
+        var message = `Hellow WORLD!`; // локальная переменная
+
+        alert(message);
+    }
+    showMessage();
+//2 global variable
+    var userName = `Василий Петрович`; // глобальная переменная
+
+    function showMessage() {
+
+        var message = userName + ` говорит: Hellow WORLD!`; // локальная переменная
+
+        alert(message);
+    }
+showMessage();
+</script>
+</body>
+</html>
